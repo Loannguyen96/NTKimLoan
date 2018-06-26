@@ -1,5 +1,5 @@
 <!-- load head -->
-<?php $this->load->view('admin/sanpham/head',$this->data); ?>
+<?php $this->load->view('admin/dathang/head',$this->data); ?>
 <div class="line"></div>
 
 <div class="wrapper" id="main_product">
