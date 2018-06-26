@@ -23,7 +23,7 @@
 			$config = array();
 			$config['total_rows'] = $total;
 			$config['base_url'] = frontend_url('Phutung/index/');
-			$config['per_page'] = 2;//so luong san pham hien thi tren 1 trang
+			$config['per_page'] = 10;//so luong san pham hien thi tren 1 trang
 			$config['uri_segment'] =4;//phan doan hien thi so trang tren url
 			$config['num_links'] = 3;
 			$config['next_link'] = '>>';
