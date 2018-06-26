@@ -4,38 +4,33 @@
 
 <div class="wrapper" id="main_product">
 	<?php $this->load->view('admin/message', $this->data); ?>
-	<div class="widget">
-		<div class="title">
+	<div class="widget" style="width: 100%">
+		<div class="title" style="width: 100%">
 			<h6>Danh sách đặt hàng</h6>
 		 	<div class="num f12">Số lượng: <b><?php echo $total; ?></b></div>
 		</div>
 		
 		<table cellpadding="0" cellspacing="0" width="100%" class="sTable mTable myTable" id="checkAll">
-			<thead class="filter">
+			<thead class="filter" style="width: 100%">
 				<tr>
-					<td colspan="6">
+					<td colspan="12" style="width: 100%">
 						<form class="list_filter form" action="" method="get">
 							<table cellpadding="0" cellspacing="0" width="100%">
 								<tbody>					
 								<tr>
-									<td class="label" style="width:100px;">
+									<td class="label" style="width:50px;">
 										<label for="filter_id">Tên KH: </label>
 									</td>
 									<td class="item" style="width:155px;" >
 										<input name="name" value="<?php echo $this->input->get('name'); ?>" id="filter_iname" type="text" style="width:155px;" />
 									</td>
-									<td class="label" style="width:100px;">
+									<td class="label" style="width:50px;">
 										<label for="filter_id">SDT:</label>
 									</td>
 									<td class="item" style="width:155px;" >
 										<input name="sdt" value="<?php echo $this->input->get('sdt'); ?>" id="filter_iname" type="text" style="width:155px;" />
 									</td>
-									<td class="label" style="width:100px;">
-										<label for="filter_id">Trạng thái:</label>
-									</td>
-									<td class="item" style="width:155px;" >
-										<input name="tt" value="<?php echo $this->input->get('tt'); ?>" id="filter_iname" type="text" style="width:155px;" />
-									</td>		
+											
 									<td style='width:200px'>
 									<input type="submit" class="button blueB" value="Tìm kiếm" />
 									<input type="reset" onclick="window.location.href='<?php echo sanpham_url('sanpham/dathang'); ?>'" value=" reset" class="basic"/>
@@ -68,7 +63,7 @@
 			
 			<tbody class="list_item">
 			<?php foreach ($dh as $row) { ?>
-				<tr class="row_9">
+				<tr class="row_12">
 					<td class="textC"><?php echo($row->ID); ?></td>
 					<td class="textC"><?php echo($row->TenNguoiDat); ?></td>
 					<td class="textC"><?php echo($row->DiaChi); ?></td>
@@ -99,7 +94,7 @@
 		    </tbody>
 		    <tfoot class="auto_check_pages">
 				<tr>
-					<td colspan="6">
+					<td colspan="12">
 						
 					     <div class='pagination'>
 

@@ -44,7 +44,8 @@
 			//Lọc dữ liệu
 			$name=$this->input->get('name');
 			$id=$this->input->get('id');
-			$loai=$this->input->get('loai');
+			
+
 			$input['where']=array();
 			if($name){
 				$input['like']=array('Ten', $name);
@@ -54,10 +55,7 @@
 				$input['like']=array('ID', $id);
 
 			}
-			if($loai){
-				$input['like']=array('Loai', $loai);
-
-			}
+			
 			//lấy danh sách sản phẩm
 			$list = $this-> Sanpham_model->get_list($input);
 			
@@ -394,32 +392,21 @@
 			//Lọc dữ liệu
 			$name=$this->input->get('name');
 			$sdt=$this->input->get('sdt');
-			$tt=$this->input->get('tt');
+			
+			
 			$input['where']=array();
 			if($name){
 				$input['like']=array('TenNguoiDat', $name);
 
 			}
-			else{
-				$sdt="";
-				$tt="";
-			}
+			
 			if($sdt){
 				$input['like']=array('SDT', $sdt);
 
 			}
-			else{
-				$name='';
-				$tt='';
-			}
-			if($tt){
-				$input['like']=array('TrangThai', $tt);
-
-			}
-			else{
-				$name='';
-				$sdt='';
-			}
+			
+			
+			
 			$segment=$this-> uri->segment('5');
 
 			$dh = $this-> Dathang_model->get_list($input);

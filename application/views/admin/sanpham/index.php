@@ -30,12 +30,7 @@
 									<td class="item" style="width:155px;" >
 										<input name="name" value="<?php echo $this->input->get('name'); ?>" id="filter_iname" type="text" style="width:155px;" />
 									</td>
-									<td class="label" style="width:40px;">
-										<label for="filter_id">Loại:</label>
-									</td>
-									<td class="item" style="width:155px;" >
-										<input name="loai" value="<?php echo $this->input->get('loai'); ?>" id="filter_iname" type="text" style="width:155px;" />
-									</td>
+									
 											
 									<td style='width:200px'>
 									<input type="submit" class="button blueB" value="Tìm kiếm" />
