@@ -21,7 +21,7 @@
 			$config = array();
 			$config['total_rows'] = $total;
 			$config['base_url'] = sanpham_url('sanpham/index/');
-			$config['per_page'] = ;//so luong san pham hien thi tren 1 trang
+			$config['per_page'] = 10;//so luong san pham hien thi tren 1 trang
 			$config['uri_segment'] =5;//phan doan hien thi so trang tren url
 			$config['num_links'] = 3;
 			$config['next_link'] = 'Trang kế tiếp';
